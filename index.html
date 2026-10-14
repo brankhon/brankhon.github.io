@@ -205,7 +205,7 @@
       a:focus-visible,
       button:focus-visible {
         outline: 2px solid #39ff14;
-        outline-offset: 3p;
+        outline-offset: 3px;
       }
 
       .exp-item {
@@ -361,7 +361,7 @@
 
       @keyframes blink {
         0%, 49% { opacity: 1; }
-        50%, 100% { opactiy: 0; }
+        50%, 100% { opacity: 0; }
       }
 
       @keyframes power-on {
@@ -389,10 +389,10 @@
       <a href="#hero" class="nav-logo">~/brankhon</a>
       <button class="nav-toggle" onclick="toggleMenu()">☰</button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#skills" onclick="toggleMenu()">./skills</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">./projects</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">./experience</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">./contact</a></li>
+        <li><a href="#skills" onclick="closeMenu()">./skills</a></li>
+        <li><a href="#projects" onclick="closeMenu()">./projects</a></li>
+        <li><a href="#experience" onclick="closeMenu()">./experience</a></li>
+        <li><a href="#contact" onclick="closeMenu()">./contact</a></li>
       </ul>
     </nav>
 
@@ -404,7 +404,7 @@
 
      <h1>Brandon Khong</h1>
 
-     <p class="hero-role">Information Systems Student; </p>
+     <p class="hero-role">Information Systems Student</p>
 
      <p class="hero-bio">
        Student at the University of Maryland, Baltimore County. I mainly write Java, Python, HTML, C++, and Luau. I like building
@@ -474,10 +474,10 @@
       <h2>Projects</h2>
 
       <div class="project-card">
-        <p class="project-lang">Luau || Roblox Studios</p>
+        <p class="project-lang">Luau &middot; Roblox Studio</p>
         <p class="project-name">Brainrot Diner Tycoon - Roblox Game</p>
-        <p class="project-desc">Roblox Game coded with Luau on Roblox Studio. Developed a multiplayer resteraunt
-           tycoon featuring interactive cooking, NPC customer with randomized orders, and 41 collectible
+        <p class="project-desc">Roblox Game coded with Luau on Roblox Studio. Developed a multiplayer restaurant
+           tycoon featuring interactive cooking, NPC customers with randomized orders, and 41 collectible
            employees. Built persistent player progression, NPC employees and upgrades, branching player upgrades, offline earning,
            and rewarding addictive gameplay. 
         </p>
@@ -500,7 +500,7 @@
         <p class="exp-date">May 2024 - Present</p>
         <p class="exp-role">Server Trainer</p>
         <p class="exp-company">Cinepolis</p>
-        <p class="exp-desc">Server Trainer for a dine-in movie theatre experience. Individually sold over 150k in product during the first 10 months of 2026. Manages dozens of active tabs at once using INDI sale software. 
+        <p class="exp-desc">Server Trainer for a dine-in movie theatre experience. Individually sold over $150k in product during the first 10 months of 2026. Manages dozens of active tabs at once using INDI sale software. 
           Team leadership position and mentor for new onboarding servers.</p>
       </div>
 
