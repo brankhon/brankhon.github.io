@@ -157,11 +157,12 @@
         margin-bottom: 0.5rem;
       }
 
-      span {
+      .tag {
         display: inline-block;
         border: 1px solid #1e2e1e;
         color: #88cc88;
-        font-size: 12px;
+        font-size: 13px;
+        line-height: 1.5;
         padding: 2px 10px;
         margin: 3px 3px 3px 0;
       }
@@ -199,6 +200,12 @@
 
       a:hover {
         color: #39ff14;
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid #39ff14;
+        outline-offset: 3p;
       }
 
       .exp-item {
@@ -271,9 +278,10 @@
       .nav-logo {
         color: #39ff14;
         font-family: 'VT323', monospace;
-        font-size: 22px;
+        font-size: 24px;
         text-decoration: none;
         letter-spacing: 1px;
+        text-shadow: 0 0 8px rgba(57, 255, 20, 0.45);
       }
 
       .nav-links {
@@ -350,6 +358,25 @@
         z-index: 9999;
         pointer-events: none;
       }
+
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opactiy: 0; }
+      }
+
+      @keyframes power-on {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        18% { opacity: 0.3; }
+        28% { opacity: 1; }
+        38% { opacity: 0.6; }
+        100% { opacity: 1; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        h1, .cursor { animation: none; }
+      }
       
     </style>
   </head>
@@ -370,12 +397,25 @@
     </nav>
 
     
-    <section id="hero">
-      <p>//brankho// $ whoami</p>
-      <h1>Brandon Khong</h1>
-      <p>Information Systems</p>
-      <p>Student @ University of Maryland, Baltimore County. Java, Python, and Luau enthusiast. </p>
-    </section>
+   <section id="hero">
+     <p class="prompt">
+       <span class="prompt-user">brandon@portfolio:</span><span class="prompt-path">~$</span> whoami<span class="cursor"></span>
+  </p>
+
+     <h1>Brandon Khong</h1>
+
+     <p class="hero-role">Information Systems Student; </p>
+
+     <p class="hero-bio">
+       Student at the University of Maryland, Baltimore County. I mainly write Java, Python, HTML, C++, and Luau. I like building
+       things people can actually use and see. My completed works range from personal finance and banking projects to multiplayer
+       roblox games and simulators. </p>
+
+     <div class="hero-actions">
+       <a class="btn primary" href="#projects">view_projects</a>
+       <a class="btn" href="#contact">get_in_touch</a>
+     </div>
+   </section>
 
   <section id="skills">
     <h2>Skills</h2>
