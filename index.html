@@ -422,51 +422,51 @@
 
     <div class="skill-group">
       <p>Languages</p>
-      <span>Python</span>
-      <span>Java</span>
-      <span>Luau</span>
-      <span>HTML</span>
-      <span>SQL</span>
-      <span>PHP</span>
-      <span>C++</span>
+      <span class ="tag">Python</span>
+      <span class ="tag">Java</span>
+      <span class ="tag">Luau</span>
+      <span class ="tag">HTML</span>
+      <span class ="tag">SQL</span>
+      <span class ="tag">PHP</span>
+      <span class ="tag">C++</span>
     </div>
 
     <div class="skill-group">
       <p>Libraries</p>
-      <span>random</span>
-      <span>math</span>
-      <span>import</span>
-      <span>I/O</span>
-      <span>scanner</span>
+      <span class ="tag">random</span>
+      <span class ="tag">math</span>
+      <span class ="tag">import</span>
+      <span class ="tag">I/O</span>
+      <span class ="tag">scanner</span>
     </div>
 
     <div class="skill-group">
       <p>Tools</p>
-      <span>GitHub</span>
-      <span>PyCharm</span>
-      <span>Eclipse</span>
-      <span>Roblox Studio</span>
-      <span>Visual Studio Code</span>
-      <span>Linux</span>
+      <span class ="tag">GitHub</span>
+      <span class ="tag">PyCharm</span>
+      <span class ="tag">Eclipse</span>
+      <span class ="tag">Roblox Studio</span>
+      <span class ="tag">Visual Studio Code</span>
+      <span class ="tag">Linux</span>
+      <span class ="tag">MS Excel</span>
     </div>
 
     <div class="skill-group">
       <p>Concepts</p>
-      <span>Web Development</span>
-      <span>Database Management</span>
-      <span>Software Security</span>
-      <span>Linux</span>
-      <span>OOP</span>
-      <span>Data Structures</span>
-      <span>Algorithms</span>
-      <span>Recursion</span>
-      <span>Generics</span>
-      <span>Linked Lists</span>
-      <span>Stacks</span>
-      <span>Queues</span>
-      <span>Trees</span>
-      <span>Sorting</span>
-      <span>File I/O</span>
+      <span class ="tag">Web Development</span>
+      <span class ="tag">Database Management</span>
+      <span class ="tag">Software Security</span>
+      <span class ="tag">OOP</span>
+      <span class ="tag">Data Structures</span>
+      <span class ="tag">Algorithms</span>
+      <span class ="tag">Recursion</span>
+      <span class ="tag">Generics</span>
+      <span class ="tag">Linked Lists</span>
+      <span class ="tag">Stacks</span>
+      <span class ="tag">Queues</span>
+      <span class ="tag">Trees</span>
+      <span class ="tag">Sorting</span>
+      <span class ="tag">File I/O</span>
     </div>
   </section>
 
@@ -474,12 +474,14 @@
       <h2>Projects</h2>
 
       <div class="project-card">
-        <p class="project-lang">Luau</p>
+        <p class="project-lang">Luau || Roblox Studios</p>
         <p class="project-name">Brainrot Diner Tycoon - Roblox Game</p>
         <p class="project-desc">Roblox Game coded with Luau on Roblox Studio. Developed a multiplayer resteraunt
            tycoon featuring interactive cooking, NPC customer with randomized orders, and 41 collectible
            employees. Built persistent player progression, NPC employees and upgrades, branching player upgrades, offline earning,
            and rewarding addictive gameplay. 
+        </p>
+      </div>
 
       <div class="project-card">
         <p class="project-lang">Java</p>
@@ -496,9 +498,10 @@
 
       <div class="exp-item">
         <p class="exp-date">May 2024 - Present</p>
-        <p class="exp-role">Server</p>
+        <p class="exp-role">Server Trainer</p>
         <p class="exp-company">Cinepolis</p>
-        <p class="exp-desc">Server for a dine-in movie theatre experience. Manages dozens of active tabs at once using INDI sale software.</p>
+        <p class="exp-desc">Server Trainer for a dine-in movie theatre experience. Individually sold over 150k in product during the first 10 months of 2026. Manages dozens of active tabs at once using INDI sale software. 
+          Team leadership position and mentor for new onboarding servers.</p>
       </div>
 
       <div class="exp-item">
@@ -515,7 +518,7 @@
         <p class="exp-company">AMC</p>
         <p class="exp-desc">Rotated between 4 positions of Runner, Concessions, Greeter, and Usher on a daily basis.
           Assisted guest with F&B purchases and managed POS systems for both concessions and tickets. Organized, prepared, and delivered 
-          food to guest in a high volume environment, keeping track of dozens of orders at once and ensuring fufillment.</p>
+          food to guest in a high volume environment, keeping track of dozens of orders at once and ensuring fulfillment.</p>
       </div>
 
       <div class="exp-item">
@@ -545,8 +548,10 @@
       function toggleMenu() {
         document.getElementById('nav-links').classList.toggle('open');
       }
-
-    </script>                 
+      function closeMenu() {
+        document.getElementById('nav-links').classList.remove('open');
+      }
+    </script>        
                              
 
     
